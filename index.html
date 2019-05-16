@@ -1,432 +1,477 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Timo Haario</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
-}
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, minimal-ui"
+		/>
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 187px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
+		<title>Timo Haario</title>
 
-	</style>
-	
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"
+		/>
+
+		<style type="text/css">
+			@import url(https://fonts.googleapis.com/css?family=Lato:400, 700);
+			body {
+				background: #fff;
+				font-family: Lato, sans-serif;
+				margin: 0 0 80px;
+			}
+			a {
+				color: #2ecc71;
+			}
+			a:focus,
+			a:hover {
+				color: #f1c40f;
+				text-decoration: none;
+			}
+			p {
+				line-height: 1.5;
+				margin: 0;
+			}
+			p + p {
+				margin-top: 10px;
+			}
+			h1,
+			h2,
+			h3,
+			h4 {
+				margin-top: 0;
+			}
+			section {
+				margin-top: 30px;
+			}
+			li {
+				line-height: 1.8;
+				list-style: none;
+			}
+			li:before {
+				content: '\f052';
+				float: left;
+				font: 13px Octicons;
+				margin-top: 6px;
+				margin-left: -20px;
+				opacity: 0.1;
+				position: absolute;
+			}
+			blockquote {
+				border-left: 5px solid #e7e9ec;
+				font-size: 14px;
+			}
+			em {
+				color: #95a5a6;
+				font-weight: normal;
+				font-style: normal;
+			}
+			h4 span:first-child {
+				color: #000;
+				font-weight: bold;
+			}
+			.container {
+				max-width: 750px;
+				padding: 0 30px;
+			}
+			.col-sm-6 {
+				margin-bottom: 10px;
+			}
+			.col-sm-12 h4 {
+				margin-top: 12px;
+			}
+			.col-sm-12 + .col-sm-12 {
+				margin-top: 30px;
+			}
+			#header {
+				background: #f4f6f6;
+				padding: 50px 0;
+				margin-bottom: 30px;
+			}
+			#header h2 {
+				color: #95a5a6;
+				font-size: 24px;
+			}
+			#content h3 {
+				color: #f1c40f;
+				font-size: 26px;
+				margin-top: -4px;
+			}
+			#content aside {
+				text-align: right;
+				padding-right: 30px;
+			}
+			#profiles .network {
+				text-transform: capitalize;
+			}
+			#work .position,
+			#volunteer .position {
+				font-weight: bold;
+				margin-bottom: 8px;
+			}
+			#education .area {
+				font-weight: bold;
+			}
+			#education .area:before {
+				content: '\f0d7';
+				font: 16px Octicons;
+				margin-right: 6px;
+			}
+			#education .studyType {
+				margin-left: 25px;
+			}
+			#awards .summary,
+			#publications .summary {
+				margin-top: 8px;
+			}
+			#publications .website a:before {
+				content: attr(href);
+			}
+
+			@media (min-width: 480px) {
+				.strike-through {
+					border-top: 1px solid #f4f6f6;
+					height: 20px;
+					margin-top: 12px;
+					position: relative;
+				}
+				.strike-through span,
+				.strike-through a {
+					background: #fff;
+					position: absolute;
+				}
+				.strike-through span:first-child {
+					padding-right: 187px;
+					margin-top: -12px;
+				}
+				.strike-through span + span {
+					font-size: 14px;
+					margin-top: -10px;
+					padding-left: 20px;
+					right: 0;
+				}
+			}
+			@media (max-width: 768px) {
+				.col-sm-6:last-child {
+					margin-bottom: 0px;
+				}
+				#content aside {
+					margin-bottom: 20px;
+					padding-right: 0;
+					text-align: left;
+				}
+				#publications .website a:before {
+					content: 'View publication';
+				}
+			}
+			@media (max-width: 480px) {
+				h1 {
+					font-size: 26px;
+				}
+				.date {
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+				.strike-through span:first-child {
+					margin-bottom: 7px;
+				}
+				.strike-through span {
+					display: block;
+				}
+				#header {
+					margin-bottom: 10px;
+					padding: 40px 0;
+				}
+				#actions {
+					display: none;
+				}
+			}
+		</style>
 	</head>
 	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-    				<div class="col-sm-4">
-						<h1>
-							Timo Haario
-						</h1>
-						<h2>
-							Software developer
-						</h2>
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 col-sm-push-3">
+						<div class="col-sm-4">
+							<h1>
+								Timo Haario
+							</h1>
+							<h2>
+								Software developer
+							</h2>
+						</div>
+						<div class="col-sm-8">
+							<img
+								style="width: 200px;"
+								src="https://puu.sh/zKD5p/3e5be4f86a.png"
+							/>
+						</div>
 					</div>
-				    <div class="col-sm-8">
-				    	<img style="width: 200px;" src="https://puu.sh/zKD5p/3e5be4f86a.png">
-                	</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+		</header>
+		<div id="content" class="container">
+			<section id="contact" class="row">
+				<aside class="col-sm-3">
+					<h3>Contact</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<strong>Email</strong>
+							<div class="email">timo.haario@aalto.fi</div>
+						</div>
+						<div class="col-sm-6">
+							<strong>Phone</strong>
+							<div class="phone">+358-451307748</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="row">
+				<aside class="col-sm-3">
+					<h3>About</h3>
+				</aside>
+				<div class="col-sm-9">
+					<p>
+						A Computer Science student in Aalto University currently
+						interested mostly in modern web and mobile application
+						development with React and React Native
+					</p>
+				</div>
+			</section>
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">timo.haario@aalto.fi</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+358-451307748</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>A Computer Science student in Aalto University currently interested mostly in modern web and mobile application development with React and React Native</p>
-		</div>
-	</section>
+			<section id="work" class="row">
+				<aside class="col-sm-3">
+					<h3>Work</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span
+									>Aalto University Department of Information
+									and Computer Science</span
+								>
+								<span class="date">
+									2015-02-01 — 2015-11-01
+								</span>
+							</h4>
+							<div class="website pull-right">
+								<a href="http://ics.aalto.fi/en/"
+									>http://ics.aalto.fi/en/</a
+								>
+							</div>
+							<div class="position">
+								Course assistant
+							</div>
+							<div class="summary">
+								<p>
+									Course Assistant/teacher in a Scala
+									programming course &quot;ICS-A1120
+									Ohjelmointi 2&quot;
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span
+									>Aalto University Department of Computer
+									Science and Engineering</span
+								>
+								<span class="date">
+									2015-09-01 — 2015-12-01
+								</span>
+							</h4>
+							<div class="website pull-right">
+								<a href="http://cse.aalto.fi/en/"
+									>http://cse.aalto.fi/en/</a
+								>
+							</div>
+							<div class="position">
+								Course assistant
+							</div>
+							<div class="summary">
+								<p>
+									Course Assistant/teacher in Scala and Python
+									programming courses about data structures
+									and algorithms &quot;CSE-A1140
+									Tietorakenteet ja algoritmit&quot;
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Munkkiniemi School</span>
+								<span class="date">
+									2015-09-01 — 2017-06-01
+								</span>
+							</h4>
+							<div class="website pull-right">
+								<a href="http://munkka.fi">http://munkka.fi</a>
+							</div>
+							<div class="position">
+								Programming club teacher
+							</div>
+							<div class="summary">
+								<p>
+									Teacher in a weekly programming club in
+									junior high school, teaching 13-15 year olds
+									to program with Python
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>PHZ Full Stack OY</span>
+								<span class="date">
+									2017-06-01 — 2019-05-17
+								</span>
+							</h4>
+							<div class="website pull-right">
+								<a href="https://phz.fi/">https://phz.fi/</a>
+							</div>
+							<div class="position">
+								Software developer
+							</div>
+							<div class="summary">
+								<p>
+									Working in different customer projects using
+									technologies such as React, React Native,
+									Node.js, Django
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Futurice</span>
+								<span class="date">
+									2019-06-03 —
+								</span>
+							</h4>
+							<div class="website pull-right">
+								<a href="https://www.futurice.com/"
+									>https://www.futurice.com/</a
+								>
+							</div>
+							<div class="position">
+								Software developer
+							</div>
+							<div class="summary">
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aalto University Department of Information and Computer Science</span>
-					<span class="date">
-						2015-02-01 — 2015-11-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://ics.aalto.fi/en/">http://ics.aalto.fi/en/</a>
+			<section id="education" class="row">
+				<aside class="col-sm-3">
+					<h3>Education</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="strike-through">
+								<span>Aalto University </span>
+								<span class="date">
+									2013-09-01 —
+								</span>
+							</h4>
+							<div class="area">
+								Department of Computer Science
+							</div>
+							<div class="studyType"></div>
+						</div>
+					</div>
 				</div>
-				<div class="position">
-					Course assistant
-				</div>
-				<div class="summary">
-					<p>Course Assistant/teacher in a Scala programming course &quot;ICS-A1120 Ohjelmointi 2&quot;</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aalto University Department of Computer Science and Engineering</span>
-					<span class="date">
-						2015-09-01 — 2015-12-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://cse.aalto.fi/en/">http://cse.aalto.fi/en/</a>
-				</div>
-				<div class="position">
-					Course assistant
-				</div>
-				<div class="summary">
-					<p>Course Assistant/teacher in Scala and Python programming courses about data structures and algorithms &quot;CSE-A1140 Tietorakenteet ja algoritmit&quot;</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Munkkiniemi School</span>
-					<span class="date">
-						2015-09-01 — 2017-06-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://munkka.fi">http://munkka.fi</a>
-				</div>
-				<div class="position">
-					Programming club teacher
-				</div>
-				<div class="summary">
-					<p>Teacher in a weekly programming club in junior high school, teaching 13-15 year olds to program with Python</p>
-				</div>
-			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>PHZ Full Stack OY</span>
-					<span class="date">
-						2017-06-01 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://phz.fi/">https://phz.fi/</a>
-				</div>
-				<div class="position">
-					Junior software developer
-				</div>
-				<div class="summary">
-					<p>Working in different customer projects using technologies such as React, React Native, Node.js, Django, Vagrant</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+			</section>
 
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Aalto University </span>
-					<span class="date">
-						2013-09-01 — 
-					</span>
-				</h4>
-				<div class="area">
-					Department of Computer Science
+			<section id="skills" class="row">
+				<aside class="col-sm-3">
+					<h3>Skills</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Programming skills</h4>
+							</div>
+							<ul class="keywords">
+								<li>Scala</li>
+								<li>Javascript</li>
+								<li>Python</li>
+								<li>Java</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Mobile Development</h4>
+							</div>
+							<ul class="keywords">
+								<li>Android/Java</li>
+								<li>React Native</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Web Development</h4>
+							</div>
+							<ul class="keywords">
+								<li>HTML5/CSS</li>
+								<li>Javascript/React/Redux</li>
+								<li>Node.js</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Technologies</h4>
+							</div>
+							<ul class="keywords">
+								<li>Unix</li>
+								<li>Vagrant</li>
+								<li>Firebase</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class="studyType">
-					
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Programming skills</h4>
-				</div>
-				<ul class="keywords">
-					<li>Scala</li>
-					<li>Javascript</li>
-					<li>Python</li>
-					<li>Java</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Mobile Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>Android/Java</li>
-					<li>React Native</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML5/CSS</li>
-					<li>Javascript/React/Redux</li>
-					<li>Node.js</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Technologies</h4>
-				</div>
-				<ul class="keywords">
-					<li>Unix</li>
-					<li>Vagrant</li>
-					<li>Firebase</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+			</section>
 
-
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Food enthusiast</h4>
+			<section id="interests" class="row">
+				<aside class="col-sm-3">
+					<h3>Interests</h3>
+				</aside>
+				<div class="col-sm-9">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Food enthusiast</h4>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Occasional gym rat</h4>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>Travelling</h4>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="name">
+								<h4>eSports</h4>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Occasional gym rat</h4>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Travelling</h4>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>eSports</h4>
-				</div>
-			</div>
-			</div>
+			</section>
 		</div>
-	</section>
-	
-
-	</div>
-	
 	</body>
 </html>
-
